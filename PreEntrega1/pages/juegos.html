@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio de Videojuegos</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>DZ Games</h1>
+        <nav class="Menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/juegos.html">Juegos</a></li>
+                <li><a href="../pages/soporte.html">Soporte</a></li>
+                <li><a href="../pages/carrito.html"><button class="lupa">Carrito</button></a></li>
+                <li><button class="lupa">Buscar</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contenido">
+        <article>
+            <select id="card" name="usercard">
+                <option value="visa">PC</option>
+                <option value="mc">PlayStation</option>
+                <option value="amex">Xbox</option>
+            </select>
+            <select id="card" name="usercard">
+                <option value="visa">Epic games</option>
+                <option value="mc">Steam</option>
+                <option value="amex">Ubisoft</option>
+            </select>
+            <select id="card" name="usercard">
+                <option value="visa">Acción</option>
+                <option value="mc">Deporte</option>
+                <option value="amex">Coperativo</option>
+            </select>
+            <select id="card" name="usercard">
+                <option value="visa">Precio:Menor a Mayor</option>
+                <option value="mc">Precio:Mayor a Menor</option>
+            </select>
+        </article>
+        <article>
+            <h2 class="subtitulo">Juegos</h2>
+        </article>
+        <div class="productos">
+            <article class="juego">
+                <img src="../img/warframecaratulaimg.jpg" width="200px" alt="Warframe">
+                <h3>WARFRAME</h3>
+                <a href="../pages/warframe.html"><button class="boton">Más info</button></a>
+                <a href="../pages/carrito.html"><button class="boton">Agregar al carro</button></a>    
+            </article>
+            <article class="juego">
+                <img src="../img/starfieldimag.jpg" width="200" alt="Starfield">
+                <h3>STARFIELD</h3>
+                <a href="juego2.html"><button class="boton">Más info</button></a>
+                <a href="../pages/carrito.html"><button class="boton">Agregar al carro</button></a>
+            </article>
+            <article class="juego">
+                <img src="../img/acvalhallaimg.jpg" width="200px" alt="Valhalla">
+                <h3>AC VALHALLA</h3>
+                <a href="juego3.html"><button class="boton">Más info</button></a>
+                <a href="../pages/carrito.html"><button class="boton">Agregar al carro</button></a>   
+            </article>
+        </div>
+    </section>
+    <footer>
+        <a href="mailto:juegospc@gmail.com">Contáctame aquí</a>
+        <p>&copy; 2023 DZ Video Games</p>
+    </footer>
+</body>
+</html>
