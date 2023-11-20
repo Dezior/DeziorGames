@@ -116,7 +116,20 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    .filtro{
-        margin: ;
+    /*pagina detalle producto*/
+    .img-prod{
+        text-align: center;
+        width: 100%;
+    }
+    .info-prod{
+        background-color: rgb(56, 56, 56);
+        border-radius: 5px;
+        margin: 16px 0;
+        padding: 20px;
+        width: 100%;
+    }
+    .img-prod{
+        margin: 0;
+        border-radius: 20px;
     }
 }
