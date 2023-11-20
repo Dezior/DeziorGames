@@ -132,4 +132,45 @@
         margin: 0;
         border-radius: 20px;
     }
-}
+    .acord{
+        margin: 8px;
+        border-radius:5px
+    }
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacto a{
+        text-decoration: none;
+        color: white;
+        padding: 8px;
+    }
+    .mens{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        background-color:rgb(241, 65, 11) ;
+        padding: 8px;
+        margin: 8px;
+        border-radius: 5px;
+        align-items: center;
+    }
+    .mens p{
+        margin: 0;
+    }
+    .tel{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        background-color:rgb(241, 65, 11) ;
+        padding: 8px;
+        margin: 8px;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .tel p{
+        margin: 0;
+    }
