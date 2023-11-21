@@ -45,6 +45,7 @@
     /*inicio*/
     main{
         grid-area: main;
+        grid-template-areas: 1fr;
         background-color: rgb(43, 43, 43);
     }
     .destacado{
@@ -80,10 +81,11 @@
         font-weight: 500;
     }
     .productos{
-        display: flex;
-        flex-direction: column;
+        
+        display: grid;
+        grid-template-columns: 1fr;
         align-items: center;
-
+        
     }
     .btn-primario{
         background-color: rgb(241, 65, 11);
@@ -92,6 +94,13 @@
     }
     .btn-primario:hover{
         background-color: rgb(141, 35, 3);
+    }
+    .juego{
+        margin: 8px;
+
+    }
+    .card-text{
+        color: white;
     }
     .img-juego{
         display: flex;
@@ -164,7 +173,7 @@
         display: flex;
         flex-direction: row;
         width: fit-content;
-        background-color:rgb(241, 65, 11) ;
+        background-color:rgb(241, 65, 11);
         padding: 8px;
         margin: 8px;
         border-radius: 5px;
@@ -174,3 +183,102 @@
     .tel p{
         margin: 0;
     }
+    /*pagina carrito*/
+    .carrito-pg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+        margin: 8px;
+        text-align: center;
+        background-color: rgb(48, 48, 48);
+        border-radius: 16px;
+    }
+    .ico-carrito{
+        margin: 16px;
+    }
+    .btn-claro{
+        background-color: rgb(255, 255, 255);
+        border: none;
+        color: black;
+    }
+    .btn-claro:hover{
+        background-color: rgb(141, 35, 3);
+    }
+    .carrito-pg h3{
+        text-align: center;
+        margin: 8px;
+        font-weight: 500;
+    }
+    .carrito-pg p{
+        margin: 5px 0px;
+        
+    }
+    .info-compra{
+        display: flex;
+        flex-direction: column;
+    }
+    .resumen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px;
+        margin: 8px;
+        width: 100%;
+        background-color: rgb(48, 48, 48);
+        border-radius: 16px;
+    }
+    .btn-resumen{
+        display: flex;
+        flex-direction: column;
+    }
+    .link{
+        color: white;
+        margin: 16px 0;
+    }
+}
+/*desktop*/
+@media(min-width: 992px){
+    header .menu-corto{
+        display: none;
+    }
+
+    header .menu-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+    }
+    header .menu-nav ul{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        text-decoration: none;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0;
+    }
+    header .menu-nav ul li{
+        margin: 0px 8px;
+    }
+    header .menu-nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .productos{
+        flex-direction: row;
+        grid-template-columns: repeat(3,1fr);
+    }
+    /*pagina carrito*/
+    .info-compra{
+        flex-direction: row;
+    }
+    .info-carrito{
+        width: 50%;
+    }
+    .res-compra{
+        width: 50%;
+    }
+}
