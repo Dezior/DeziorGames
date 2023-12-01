@@ -116,6 +116,10 @@
     padding: 20px;
     width: 100%;
   }
+  #layout main .contenido .acord {
+    margin: 8px;
+    border-radius: 5px;
+  }
   #layout footer {
     grid-area: footer;
     background-color: black;
